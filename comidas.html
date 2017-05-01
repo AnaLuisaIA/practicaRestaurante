@@ -260,6 +260,7 @@
         </div>
       </div>
       <div class="row">
+        <!--Fila que mostrará la tarjeta que incluye los postres-->
         <div class="col s12 m6 l6">
           <div class="card">
             <div class="card-content">
@@ -275,6 +276,9 @@
               <div id="test5">
                 <div class="row">
                   <div class="col s6 m6 l6">
+                    <!--La imagen del producto a ofrecer se muestra de forma responsiva,
+                    el input type es el checkbox al que se le da un identificador para
+                    utilizarlo en el archivo javascript-->
                     <img class="responsive-img hoverable" src="css/img/chocoflan.jpg">
                     <input type="checkbox" id="ckchoco" class="filled-in" />
                     <label for="ckchoco">Quiero ordenar</label>
@@ -342,11 +346,15 @@
     </div>
     <div class="row">
       <div class="col s4 m4 l4 offset-l5 offset-m5 offset-s3">
+        <!--Con el atributo onclick del botón, indicamos que realizará una acción cuando se haga click sobre él,
+        ejecutará la función hacerOrden.-->
           <a class="waves-effect waves-light btn-large green lighten-1" onclick="hacerOrden()">Ordenar</a>
       </div>
     </div>
+    <!--En esta fila se mostrará la tabla solamente si se ha presionado el botón-->
     <div id="divTabla" class="row">
       <div class="contenedor-tabla col s12 m6 l8 offset-m3 offset-l2">
+        <!--Tabla vacía-->
         <table id="menuTabla" class="responsive-table">
               <thead>
                 <tr>

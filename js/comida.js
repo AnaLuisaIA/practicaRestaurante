@@ -1,5 +1,8 @@
+//Esta función es activida cuando se da click en botón de ordenar
 function hacerOrden() {
+  //Las variables que se utilizarán más adelante se declaran
   var fila, celda, celda2, textoCelda, textoCelda2;
+  //cuentaTotal es una variable numérica, almacenará los precios de las comidas
   var cuentaTotal = 0;
 
   //Activamos las vistas para la tabla y su contenedor
@@ -7,28 +10,31 @@ function hacerOrden() {
   divisor.style.display = "block";
   var tabla = document.getElementById("menuTabla");
   tabla.style.display = "table";
-  //Se almacena en variable el cuerpo de la tabla
+  //Se almacena en una variable el cuerpo de la tabla
   var tablaBody = document.getElementById("tbody");
 
   //Se obtiene el valor true/false del checkbox y se almacena
   var entrada1 = document.getElementById("ckdoblada").checked;
-  //Si el valor es true (está seleccionado) agrega una fila en
-  //la tabla
+  //Si el valor es true (está seleccionado) agrega una fila en la tabla
   if (entrada1 == true) {
+    //Crea un elemento de fila
     fila = document.createElement("tr");
-
+    //Crea una celda de la fila
     celda = document.createElement("td");
+    //Inserta texto en la celda creada
     textoCelda = document.createTextNode("Tacos para compartir");
-
+    //Realiza las mismas acciones con la otra celda
     celda2 = document.createElement("td");
     textoCelda2 = document.createTextNode("$120.00");
-
+    //Suma en la variable cuentaTotal el valor de cuentaTotal mas el precio del producto
     cuentaTotal += 120;
-
+    //Agrega los textos a las celdas correspondientes
     celda.appendChild(textoCelda);
     celda2.appendChild(textoCelda2);
+    //Agrega las celdas a las filas correspondientes
     fila.appendChild(celda);
     fila.appendChild(celda2);
+    //Inserta la fila en el cuerpo de la tabla
     tablaBody.appendChild(fila);
   }
 
@@ -371,6 +377,6 @@ function hacerOrden() {
     fila.appendChild(celda2);
     tablaBody.appendChild(fila);
   }
-
+  //Se inserta en el elemento con el id "total" la cuenta de todo lo que se ha ordenado
   document.getElementById('total').innerHTML="$"+cuentaTotal+".00";
 }
