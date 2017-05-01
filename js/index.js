@@ -9,4 +9,5 @@ $( document ).ready(function() {
     indicators: false,
     height: 300
   });
+  $('.modal').modal();
 });

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Comidas</title>
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Pacifico|Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Pacifico|Anton|Dancing+Script" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -65,107 +65,301 @@
     </div>
 
     <div class="row">
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Entradas</span>
-            <p>Kubo busca deleitar tu paladar con entradas frescas, originales y de calidad.</p>
-          </div>
-          <div class="card-tabs">
-            <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="#test1">De la casa</a></li>
-              <li class="tab"><a href="#test2">Línea ligera</a></li>
-            </ul>
-          </div>
-          <div class="card-content grey lighten-4">
-            <div id="test1">
-              <div class="row">
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/dob.jpg">
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Entradas</span>
+              <p id="descripcion" class="flow-text" align="justify">Kubo busca deleitar tu paladar con entradas frescas, originales y de calidad.</p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test1">De la casa</a></li>
+                <li class="tab"><a href="#test2">Línea ligera</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test1">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal1">
+                      <img class="responsive-img hoverable" src="css/img/dob.jpg"></a>
+                      <input type="checkbox" id="ckdoblada" class="filled-in" />
+                      <label for="ckdoblada">Quiero ordenar</label>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                      <div class="modal-content">
+                        <h5>Tacos para compartir
+                          <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$120</a></h5>
+                        <br>
+                        <p id="descripcion2" class="flow-text">Deliciosos tacos de carne de res acompañados con salsa y tortilla frita.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal2">
+                      <img class="responsive-img hoverable" src="css/img/queso.jpg"></a>
+                      <input type="checkbox" id="ckqueso" class="filled-in" />
+                      <label for="ckqueso">Quiero ordenar</label>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal2" class="modal">
+                    <div class="modal-content">
+                      <h5>Queso Fundido
+                        <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$150</a></h5>
+                      <br>
+                      <p id="descripcion2" class="flow-text">Cacerola de queso fundido acompañada de tortillas, con un toque de chorizo y amor.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/queso.jpg">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal3">
+                      <img class="responsive-img hoverable" src="css/img/guaca.jpg"></a>
+                      <input type="checkbox" id="ckguacamole" class="filled-in" />
+                      <label for="ckguacamole">Quiero ordenar</label>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal3" class="modal">
+                    <div class="modal-content">
+                      <h5>Guacamole
+                        <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$200</a></h5>
+                      <br>
+                      <p id="descripcion2" class="flow-text">Molcajete de guacamole casero.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                    </div>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal4">
+                      <img class="responsive-img hoverable" src="css/img/tacos.jpg"></a>
+                      <input type="checkbox" id="cktacos1" class="filled-in" />
+                      <label for="cktacos1">Quiero ordenar</label>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal4" class="modal">
+                    <div class="modal-content">
+                      <h5>Tacos dorados
+                        <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$150</a></h5>
+                      <br>
+                      <p id="descripcion2" class="flow-text">Entrada preferida del chef. Tacos de pollo y tinga preparados con lechuga, queso, crema. Receta secreta.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/guaca.jpg">
-                </div>
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/tacos.jpg">
+              <div id="test2">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal5">
+                      <img class="responsive-img hoverable" src="css/img/ensalada.jpg"></a>
+                      <input type="checkbox" id="ckensalada" class="filled-in" />
+                      <label for="ckensalada">Quiero ordenar</label>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal5" class="modal">
+                    <div class="modal-content">
+                      <h5>Ensalada
+                        <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$100</a></h5>
+                      <br>
+                      <p id="descripcion2" class="flow-text">Fresca ensalada de la casa preparada con los mejores ingredientes.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                    </div>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <a class="modal-trigger" href="#modal6">
+                      <img class="responsive-img hoverable" src="css/img/verdura.jpg"></a>
+                      <input type="checkbox" id="ckverdura" class="filled-in" />
+                      <label for="ckverdura">Quiero ordenar</label>
+                  </div>
+                  <!-- Modal Structure -->
+                  <div id="modal6" class="modal">
+                    <div class="modal-content">
+                      <h5>Verduras a la plancha
+                        <a id="btn-des" class="btn-floating btn-large waves-effect waves-light red lighten-1 right">$80</a></h5>
+                      <br>
+                      <p id="descripcion2" class="flow-text">Espárragos, calabacín, zanahoria y berenjena, explosión de sabor.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="modal-action modal-close btn-large btn-flat">Cerrar</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div id="test2">
-              <div class="row">
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/ensalada.jpg">
+          </div>
+        </div>
+
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Comidas</span>
+              <p id="descripcion" class="flow-text" align="justify">Para nosotros el plato fuerte es más que comida, es una experiencia deliciosa.</p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test3">De la casa</a></li>
+                <li class="tab"><a href="#test4">Línea ligera</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test3">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/tacos2.jpg">
+                    <input type="checkbox" id="cktacos2" class="filled-in" />
+                    <label for="cktacos2">Quiero ordenar</label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/arrachera.jpg">
+                    <input type="checkbox" id="ckarrachera" class="filled-in" />
+                    <label for="ckarrachera">Quiero ordenar</label>
+                  </div>
                 </div>
-                <div class="col s6 m6 l6">
-                   <img class="responsive-img hoverable" src="css/img/verdura.jpg">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/pozole.jpg">
+                    <input type="checkbox" id="ckpozole" class="filled-in" />
+                    <label for="ckpozole">Quiero ordenar</label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/chilen.jpg">
+                    <input type="checkbox" id="ckchile" class="filled-in" />
+                    <label for="ckchile">Quiero ordenar</label>
+                  </div>
+                </div>
+              </div>
+              <div id="test4">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/filete.jpg">
+                    <input type="checkbox" id="ckfilete" class="filled-in" />
+                    <label for="ckfilete">Quiero ordenar</label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/pechuga.jpg">
+                    <input type="checkbox" id="ckpechuga" class="filled-in" />
+                    <label for="ckpechuga">Quiero ordenar</label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Comidas</span>
-            <p>Para nosotros el plato fuerte es más que comida, es una experiencia deliciosa.</p>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Postres</span>
+              <p id="descripcion" class="flow-text" align="justify">Siempre tenemos espacio para un poco más y en Kubo te queremos consentir.</p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test5">De la casa</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test5">
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/chocoflan.jpg">
+                    <input type="checkbox" id="ckchoco" class="filled-in" />
+                    <label for="ckchoco">Quiero ordenar</label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/arrozleche.jpg">
+                    <input type="checkbox" id="ckarroz" class="filled-in" />
+                    <label for="ckarroz">Quiero ordenar</label>
+                  </div>
+                  <div class="row">
+                    <div class="col s6 m6 l6">
+                      <img class="responsive-img hoverable" src="css/img/zanahoria.jpg">
+                      <input type="checkbox" id="ckzanahoria" class="filled-in" />
+                      <label for="ckzanahoria">Quiero ordenar</label>
+                    </div>
+                    <div class="col s6 m6 l6">
+                      <img class="responsive-img hoverable" src="css/img/frutas.jpg">
+                      <input type="checkbox" id="ckfruta" class="filled-in" />
+                      <label for="ckfruta">Quiero ordenar</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-tabs">
-            <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="#test3">De la casa</a></li>
-              <li class="tab"><a href="#test4">Línea ligera</a></li>
-            </ul>
-          </div>
-          <div class="card-content grey lighten-4">
-            <div id="test3">Test 1</div>
-            <div id="test4">Test 2</div>
+        </div>
+
+        <div class="col s12 m6 l6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Bebidas</span>
+              <p id="descripcion" class="flow-text" align="justify">Burbujeantes, frías, calientes o naturales, Kubo siempre tiene algo para ti para acompañar tu comida.</p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test7">De la casa</a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test7">
+                <div class="row">
+                  <div class="col s12 m12 l12 center-align">
+                    <img class="responsive-img hoverable" src="css/img/jugos.jpg"><br>
+                    <input type="checkbox" id="ckjugo" class="filled-in" />
+                    <label for="ckjugo">Quiero ordenar</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/soda.jpg">
+                    <input type="checkbox" id="cksoda" class="filled-in" />
+                    <label for="cksoda">Quiero ordenar</label>
+                  </div>
+                  <div class="col s6 m6 l6">
+                    <img class="responsive-img hoverable" src="css/img/mojito.jpg">
+                    <input type="checkbox" id="ckmojito" class="filled-in" />
+                    <label for="ckmojito">Quiero ordenar</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Postres</span>
-            <p>Siempre tenemos espacio para un poco más y en Kubo te queremos consentir.</p>
-          </div>
-          <div class="card-tabs">
-            <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="#test5">De la casa</a></li>
-              <li class="tab"><a ref="#test6">Línea ligera</a></li>
-            </ul>
-          </div>
-          <div class="card-content grey lighten-4">
-            <div id="test5">Test 1</div>
-            <div id="test6">Test 2</div>
-          </div>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col s4 m4 l4 offset-l5 offset-m5 offset-s3">
+          <a class="waves-effect waves-light btn-large green lighten-1" onclick="hacerOrden()">Ordenar</a>
       </div>
+    </div>
+    <div id="divTabla" class="row">
+      <div class="contenedor-tabla col s12 m6 l8 offset-m3 offset-l2">
+        <table id="menuTabla" class="responsive-table">
+              <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+              </thead>
 
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Bebidas</span>
-            <p>Burbujeantes, frías, calientes o naturales, Kubo siempre tiene algo para ti.</p>
-          </div>
-          <div class="card-tabs">
-            <ul class="tabs tabs-fixed-width">
-              <li class="tab"><a href="#test7">De la casa</a></li>
-              <li class="tab"><a ref="#test8">Línea ligera</a></li>
-            </ul>
-          </div>
-          <div class="card-content grey lighten-4">
-            <div id="test7">Test 1</div>
-            <div id="test8">Test 2</div>
-          </div>
-        </div>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+          <p class="flow-text left"><strong>Total: </strong></p>
+          <p id="total" class="flow-text center-align"></p>
       </div>
     </div>
   </main>
@@ -183,6 +377,7 @@
 
   <script type='text/javascript' , src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/comida.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 

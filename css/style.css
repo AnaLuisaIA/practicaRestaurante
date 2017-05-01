@@ -78,10 +78,31 @@ a i {
   background-color: #ff6666;
 }
 
+#descripcion{
+font-size: 1em;
+}
+#descripcion2{
+  font-size: 1.3em;
+}
+#btn-des{
+  font-family: 'Dancing Script';
+  font-size: .8em;
+}
+.modal .modal-content h5{
+  font-family: 'Anton';
+}
 .card .card-content .card-title {
   font-family: 'Anton';
 }
-
+.contenedor-tabla{
+  background-color: white;
+}
+table{
+  display: none;
+}
+#divTabla{
+  display: none;
+}
 header, main, footer {
   padding-left: 280px;
 }
